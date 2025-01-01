@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "blog-backend"
+version = "0.1.0"
+description = ""
+authors = ["noe-lauras <lauras.noe@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+blog_backend = 'blog_backend.blog_cli:blog_cli'
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.1"
+sqlalchemy = "^2.0.36"
+typer = "^0.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
